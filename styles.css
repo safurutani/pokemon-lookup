@@ -57,7 +57,7 @@
     padding: 2px 3px;
     box-shadow: 2px 2px white;
   }
-  #help-icon:hover {
+  #help-icon:hover, #search-button:hover {
     cursor: pointer;
   }
   #help-icon:hover + #help-text {
