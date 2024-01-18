@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Proxy Lookup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Proxy Lookup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script type ="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="header">
+      <h1 id="title">Pokemon Lookup</h1>
+      <div id="search-line">
+        <input id="search-input" required="true"> 
+        <button id="search-button" disabled = "true">Search</button>
+        <div id="help-icon">?</div>
+        <div id="help-text">Search pokemon by id (i.e. 32) or name (i.e. pikachu)<br> Multiple words can be separated by a space or dash. (i.e. Mr Mime) Please leave out any other characters.<br> Any modifiers should be added after the pokemon name (i.e. nidoran-f or absol-mega).</div>
+      </div>
+      <div id="error-msg"></div>
+    </div>
+    <div id="pokemon-card">
+      <div id="name-container">
+        <h2 id="pokemon-id"></h2>
+        <h2 id="pokemon-name"></h2>
+      </div>
+      <div id="image-container">
+        <img id="sprite" />
+      </div>
+      <div id="types"></div>
+      <div id="biometrics">
+        <h3 id="height"></h3>
+        <h3 id="weight"></h3>
+      </div>
+      <div id="stats-container">
+        <div id="labels">
+          <div id="hp-label">HP</div>
+          <div id="attack-label">Attack</div>
+          <div id="defense-label">Defense</div>
+          <div id="speed-label">Speed</div>
+          <div id="special-attack-label">Special Attack</div>
+          <div id="special-defense-label">Special Defense</div>
+        </div>
+        <div id="stats">
+          
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+:root {
+    --bug: #94BC4A;
+    --dark: #736C75;
+    --dragon: #6A7BAF;
+    --electric: #E5C531;
+    --fairy: #E397D1;
+    --fighting: #CB5F48;
+    --fire: #EA7A3C;
+    --flying: #7DA6DE;
+    --ghost: #846AB6;
+    --grass: #71C558;
+    --ground: #CC9F4F;
+    --ice: #70CBD4;
+    --normal: #AAB09F;
+    --poison: #B468B7;
+    --psychic: #E5709B;
+    --rock: #B2A061;
+    --steel: #89A1B0;
+    --water: #539AE2;
+    --yellow: #ecb223;
+  }
+  body {
+    font-family: "Sometype Mono";
+    min-width: 400px;
+    background: #6fc1e0;
+  }
+  #search-line {
+    display: flex;
+    margin: auto;
+  }
+  #search-input {
+    width: 70%;
+    outline: none;
+    margin-left: -10px;
+  }
+  #search-button {
+    width: 25%;
+    font-family:"Sometype Mono";
+    font-weight: bold;
+  }
+  #search-input, #search-button {
+    padding: 6px;
+    border-radius: 50px;
+    box-shadow: 4px 4px #2f87b9 ;
+    border: 2px solid #2f87b9;
+    background: white;
+    margin: auto 2px;
+  }
+  #help-icon {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border:solid #2f87b9;
+    color: white;
+    background: #2f87b9;
+    margin: auto 6px;
+    padding: 2px 3px;
+    box-shadow: 2px 2px white;
+  }
+  #help-icon:hover {
+    cursor: pointer;
+  }
+  #help-icon:hover + #help-text {
+    display: block;
+  }
+  #help-text {
+    position: absolute;
+    background: #E9E9F9;
+    font-size: 12px;
+    width: 250px;
+    padding: 4px;
+    border-radius: 5px;
+    left: 47%;
+    top: 126px;
+    text-align: center;
+    display:none;
+  }
+  #error-msg {
+    height: 40px;
+    line-height: 40px;
+    width: 400px;
+  }
+  #pokemon-card {
+    border: #ecb223 solid 18px;
+    border-radius: 10px;
+    background: var(--yellow);
+    width: 400px;
+    margin: auto;
+    box-shadow: 10px 12px #2f87b9 ;
+  }
+  #name-container {
+    padding-bottom: 30px;
+    background: #ecb223;
+  }
+  #pokemon-name {
+    margin: auto;
+    text-align: center;
+  }
+  #pokemon-id {
+    margin: 0;
+    text-align: right;
+    padding-right: 14px;
+    padding-top: 4px;
+  }
+  #header, #error-msg {
+    text-align: center;
+    margin:auto;
+    width: 400px;
+  }
+  #stats-container, #types, #biometrics {
+    display: flex;
+    margin: auto;
+  }
+  #types {
+    justify-content: center;
+    padding-top: 16px;
+    background: white;
+    width: 396px;
+    border-radius: 7px 7px 0 0;
+  }
+  #biometrics {
+    width: 396px;
+    justify-content: space-around;
+    height: 30px;
+    background: white;
+    border-radius: 0 0 7px 7px;
+  }
+  #height, #weight {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 6px;
+  }
+  #image-container {
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid var(--yellow);
+    background: white;
+  }
+  #sprite {
+    object-fit: cover;
+    height: 100%;
+    max-height: 200px;
+  }
+  #labels {
+    text-align:right;
+  }
+  .type {
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 0 4px;
+    font-size: 16px;
+  }
+  #stats-container {
+    padding: 22px 0;
+    padding-bottom: 44px;
+    border-radius: 10px; 
+    justify-content: center;
+  }
+  #labels, #stats {
+    width: 40%;
+    height: 140px;
+    line-height: 28px;
+  }
+  #stats {
+    padding-left: 26px;
+  }
+  #labels > div, #stats > div {
+    border-bottom: solid 1px;
+  }
