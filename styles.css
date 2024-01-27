@@ -32,6 +32,7 @@
     width: 70%;
     outline: none;
     margin-left: -10px;
+    text-indent: 8px;
   }
   #search-button {
     width: 25%;

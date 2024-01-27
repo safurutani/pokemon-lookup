@@ -11,6 +11,10 @@ searchInput.addEventListener("keyup", ()=> {
       searchButton.disabled = true;
     }
   else {
+    if (e.key === "Enter") {
+      const pokemon = formatNameForUrl(searchInput.value);
+      lookUpPokemon(pokemon);
+    }
     searchButton.disabled = false;
   }
 });
